@@ -1,0 +1,10 @@
+<mat-card>
+    <markdown [src]="mdpath"> </markdown>
+</mat-card>
+
+<mat-card fxLayout="column">
+  <div><span>Current Media Query: </span>{{ mq }}</div>
+  <div><span>Is Phone: </span>{{ isPhone }}</div>
+  <div><span>Is Tablet: </span>{{ isTablet }}</div>
+  <div [ngClass]="getClass()">The Responsive Div</div>
+</mat-card>

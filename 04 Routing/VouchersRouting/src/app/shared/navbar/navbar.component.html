@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-light ">
+  <img width="50" src="/assets/images/angular.svg" />
+  <a class="navbar-brand" href="#"
+    >smart Angular Single Page Application Development</a
+  >
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a
+        [routerLink]="'/'"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        >Demos</a
+      >
+      <a routerLink="/vouchers" routerLinkActive="active">Vouchers</a>
+      <a routerLink="/accounts" routerLinkActive="active">Accounts</a>
+      <a routerLink="/admin" routerLinkActive="active">Admin</a>
+      <a class="glyphicon glyphicon-edit" (click)="toggelSidebar()"></a>
+    </div>
+  </div>
+</nav>

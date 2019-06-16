@@ -1,0 +1,17 @@
+[
+  {
+    "url": "observablescurd",
+    "title": "Observables CRUD",
+    "component": "ObservableCrudComponent"
+  },
+  {
+    "url": "clients",
+    "title": "Comparing HttpClients",
+    "component": "HttpClientsComponent"
+  },
+  {
+    "url": "nosql",
+    "title": "Using Interceptor",
+    "component": "NoSQLInterceptorComponent"
+  }
+]

@@ -1,0 +1,13 @@
+<div class="section">
+  <h4>Internationalization</h4>
+  Person: {{ person.name }}, {{ person.age }}<br />
+  Salery: {{ person.salery | currency }}<br />
+  Salery with fixed Currency Symbol: {{ person.salery | currency: "EUR":true
+  }}<br />
+  Salery with fixed Currency Symbol: € {{ person.salery | number: "1.2-2"
+  }}<br />
+  DoB: {{ person.dateOfBirth | date: "longDate" }}<br />
+
+  <hr />
+  Add {{ val }} to app.module.ts - notice change
+</div>

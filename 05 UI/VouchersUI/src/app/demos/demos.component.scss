@@ -1,0 +1,29 @@
+a {
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.demoMenu {
+  min-width: 210px;
+}
+
+.workbenchContainer {
+  min-width: 400px;
+  margin-left: 10px;
+}
+
+.workbench {
+  background-color: white;
+}
+
+.mat-sidenav-container {
+  // app.components.css:  grid-template-rows: 5vh auto 5vh; -> 90vh - 2x 10px gap
+  height: calc(90vh - 20px);
+}
+
+.mat-sidenav {
+  padding: 0.5rem;
+  width: 185px;
+}

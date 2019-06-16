@@ -1,0 +1,66 @@
+<mat-card>
+  Make sure API is running: \00 Voucherservice\VouchersAPI\ -> dotnet watch run
+  -> watch console
+</mat-card>
+
+<mat-accordion>
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Simple Operator Examples
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div fxLayout="row wrap" class="cmdItems">
+      <a mat-raised-button color="accent" (click)="useMap()">Use map()</a>
+      <a mat-raised-button color="accent" (click)="usePipeMapAndTap()"
+        >Use pipe(), map() & tap()</a
+      >
+      <a mat-raised-button color="accent" (click)="errHandling()"
+        >With error handling</a
+      >
+      <a mat-raised-button color="accent" (click)="useFind()"
+        >Using find() to return first item</a
+      >
+      <a mat-raised-button color="accent" (click)="useFilterArray()"
+        >Use filter() to return on Array</a
+      >
+      <a mat-raised-button color="accent" (click)="useTake()"
+        >Use take() to return an Array</a
+      >
+      <a mat-raised-button color="accent" (click)="useInterval()"
+        >Use interval() to set an Inverval</a
+      >
+      <a mat-raised-button color="accent" (click)="useDelay()"
+        >Use delay() to wait for a periode</a
+      >
+      <a mat-raised-button color="accent" (click)="useFlatMap()"
+        >Use flatMap() to chain Subscriptions</a
+      >
+      <a mat-raised-button color="accent" (click)="useForkJoin()"
+        >Use forkJoin() to join Observables</a
+      >
+    </div>
+    <div fxLayout="row nowrap" class="clearSubs">
+      <a mat-raised-button color="accent" (click)="unsbscribe()"
+        >Click to clear Subscription</a
+      >
+    </div>
+    <div fxLayout="row" fxLayoutAlign="center center">
+      Result: {{ response | json }}
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Debounced Search
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <app-debounced-search></app-debounced-search>
+  </mat-expansion-panel>
+</mat-accordion>
+
+<mat-card fxLayout="column" fxLayoutGap="10px">
+  <mat-card *ngFor="let v of vouchers">{{
+    v.Label != null ? v.Label : v.Text
+  }}</mat-card>
+</mat-card>

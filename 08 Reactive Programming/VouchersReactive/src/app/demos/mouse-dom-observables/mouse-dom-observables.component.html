@@ -1,0 +1,20 @@
+<mat-card>
+  Works with Mock Data - No Service needed
+</mat-card>
+
+<mat-card fxLayout="column" fxLayoutGap="10px">
+  <a mat-raised-button color="accent" (click)="useMouse()"
+    >Capture Mouse Events as Observable in the SignPad</a
+  >
+  <canvas class="signPad"></canvas>
+  <div>signPad - Mouse Moved at X: {{ result.X }} Y: {{ result.Y }}</div>
+  <a mat-raised-button color="accent" (click)="unsubscribeMouseEvt()"
+    >Unsubscribe Mouse Events</a
+  >
+</mat-card>
+
+<mat-card fxLayout="column" fxLayoutGap="10px">
+  <mat-form-field>
+    <input matInput placeholder="Enter some Text and watch console" #inputRef />
+  </mat-form-field>
+</mat-card>
